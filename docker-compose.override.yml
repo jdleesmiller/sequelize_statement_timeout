@@ -1,0 +1,4 @@
+test:
+  volumes:
+    - .:/home/app/app
+    - /home/app/app/node_modules

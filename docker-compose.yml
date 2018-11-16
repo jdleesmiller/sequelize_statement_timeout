@@ -1,0 +1,9 @@
+db:
+  image: postgres:10
+  ports:
+    - '5432:5432'
+
+test:
+  build: .
+  links:
+    - db
