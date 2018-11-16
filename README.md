@@ -2,6 +2,8 @@
 
 Test out how to set `statement_timeout` with [sequelize](http://docs.sequelizejs.com/).
 
+Setting a statement timeout can make your application more [robust against runaway queries](https://www.citusdata.com/blog/2017/04/28/postgres-tips-for-rails/). This demo shows how to set a global statement timeout and also provide a longer timeout for a specific transaction using `SET LOCAL statement_timeout`.
+
 ## Setup
 
 ```
@@ -10,6 +12,8 @@ docker-compose up
 ```
 
 ## Output
+
+The code in [index.js](index.js) produces the following output:
 
 ```
 test_1  | Fast query without transaction:
