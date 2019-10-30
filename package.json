@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "pg": "^7.6.1",
-    "sequelize": "^5.10.1"
+    "sequelize": "^5.15.1"
   }
 }
